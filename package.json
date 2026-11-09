@@ -1,0 +1,49 @@
+{
+  "name": "morpho-sign-check",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest run",
+    "test:live": "LIVE=1 node --env-file-if-exists=.env.local node_modules/vitest/vitest.mjs run live",
+    "probe": "tsx --env-file-if-exists=.env.local scripts/probe.ts",
+    "proxy": "tsx --env-file-if-exists=.env.local proxy/server.ts",
+    "check-fixture": "tsx --env-file-if-exists=.env.local scripts/check.ts",
+    "try-proxy": "tsx scripts/try-proxy.ts",
+    "scenarios": "tsx --env-file-if-exists=.env.local scripts/scenarios.ts"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@morpho-org/morpho-ts": "4.1.0",
+    "jose": "6.2.15",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "viem": "2.57.13",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}

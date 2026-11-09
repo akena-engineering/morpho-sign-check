@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" fill="none" font-family="'Hanken Grotesk', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title>Sign Check: before you sign what an AI agent prepared, it tells you whether it does what you asked</title>
+  <defs>
+    <radialGradient id="glow" cx="1080" cy="380" r="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3c80ff" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#3c80ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="#15181a" />
+  <rect width="1280" height="320" rx="24" fill="url(#glow)" />
+  <rect x="0.5" y="0.5" width="1279" height="319" rx="23.5" stroke="#d0ddf7" stroke-opacity="0.1" />
+
+  <!-- The page's mark: a check cut into a Morpho-blue tile -->
+  <g transform="translate(72 84)">
+    <rect width="64" height="64" rx="18" fill="#3c80ff" />
+    <path d="M19 33 28 42 46 22" stroke="#15181a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <text x="156" y="136" font-size="60" font-weight="300" letter-spacing="-2" fill="#ffffff">Sign Check</text>
+  <text x="72" y="206" font-size="26" fill="#95a1b8">Before you sign what an AI agent prepared,</text>
+  <text x="72" y="242" font-size="26" fill="#95a1b8">it tells you whether it does what you asked.</text>
+
+  <!-- The verdict card -->
+  <g transform="translate(760 70)">
+    <rect width="448" height="180" rx="16" fill="#1e2227" stroke="#d0ddf7" stroke-opacity="0.08" />
+    <text x="24" y="58" font-size="40" font-weight="300" fill="#5bd8a0">PASS</text>
+    <text x="140" y="56" font-size="17" fill="#d0ddf7">No mismatch found in any check.</text>
+    <g font-size="16" fill="#d0ddf7">
+      <rect x="24" y="84" width="44" height="20" rx="10" fill="#5bd8a0" fill-opacity="0.14" />
+      <text x="34" y="99" font-size="12" font-weight="600" fill="#5bd8a0">Pass</text>
+      <text x="80" y="100">Approves exactly 100 USDC to vaultBundlesV1</text>
+      <rect x="24" y="116" width="44" height="20" rx="10" fill="#5bd8a0" fill-opacity="0.14" />
+      <text x="34" y="131" font-size="12" font-weight="600" fill="#5bd8a0">Pass</text>
+      <text x="80" y="132">You send 100 USDC</text>
+      <rect x="24" y="148" width="44" height="20" rx="10" fill="#5bd8a0" fill-opacity="0.14" />
+      <text x="34" y="163" font-size="12" font-weight="600" fill="#5bd8a0">Pass</text>
+      <text x="80" y="164">Matches Morpho's own simulation</text>
+    </g>
+  </g>
+</svg>
